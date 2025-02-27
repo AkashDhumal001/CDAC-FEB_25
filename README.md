@@ -1,2 +1,2 @@
 # CDAC-FEB_25
-Hello, COS Computer Operating System Assignments
+Hello, Computer Operating System Assignments (COS)
