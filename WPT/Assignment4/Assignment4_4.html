@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function fetchData(url, callback)
+        {
+            console.log("Fetching Data From: ", url);
+
+            const errorOccure = Math.random() < 0.5;
+            
+        
+            setTimeout(() => {
+                if(errorOccure)
+                    {
+                        callback("Error: Failed To Fetch data from " + url);
+                    }
+                else
+                    {
+                        const fakeResponse = `Response From:${url}`;
+                        callback(fakeResponse);
+                        
+                    }
+                
+            }, 2000);
+        }
+
+        fetchData("https://www.w3schools.com/js/js_htmldom.asp", (response)=>{
+
+            console.log(response);
+
+        });
+
+    </script>
+</body>
+</html>
