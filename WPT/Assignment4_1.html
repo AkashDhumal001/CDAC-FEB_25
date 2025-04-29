@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        function totheUpperCase(str)
+        {
+            return str.toUpperCase();
+        }
+
+        function processData(str, uppercallback)
+        {
+            var result = uppercallback(str);
+            return result;
+        }
+
+        const res = processData("abc", totheUpperCase);
+        console.log(res);
+    </script>
+</body>
+</html>

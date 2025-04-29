@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        function forEachElement(array, printElement)
+        {
+            for(let i = 0; i<array.length; i++)
+                {
+                    printElement(array[i]*2, i, array);
+                }
+        }
+
+        
+        const arr = [10, 20, 30, 40, 50];
+        forEachElement(arr, (element, index)=>
+        {
+            console.log(index, "==>", element);
+        });
+
+
+    </script>
+</body>
+</html>
